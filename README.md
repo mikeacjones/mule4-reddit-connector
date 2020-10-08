@@ -75,7 +75,7 @@ To connect to reddit, you need a reddit account and `client_id` and `client_secr
 
 By default, the comment and post listeners will only feed in new comments and posts since startup of app. If you would like to add the ability for the app to poll missed submissions, create a persistent object store and assign to listener. 
 
-Only one post/comment is fed into the flow at a time; set your flow's max concurrency based on processing needs.
+Up to 100 new posts/comments are fed into the flow at a time, based on how many are found on each poll. The listener will continue firing even while flow is processing, so set your max concurrency if necessary.
 
 The listeners will respect Reddit's rate limiting and attemp to automatically queue operations/polling; however, I don't recommend setting polling frequency lower than 5,000ms.
 
