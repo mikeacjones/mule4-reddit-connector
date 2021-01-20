@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <servers>
-        <server>
-            <id>github-reddit</id>
-            <username>${env.GIT_USERNAME}</username>
-            <password>${env.GIT_TOKEN}</password>
-        </server>
-    </servers>
-    <profiles>
-        <profile>
-            <id>Mule</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <repositories>
-                <repository>
-                    <id>github-reddit</id>
-                    <name>GitHub Maven Packages</name>
-                    <url>https://maven.pkg.github.com/mikeacjones/mule4-reddit-connector</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
+  <servers>
+    <server>
+      <id>exchange-repository</id>
+      <username>${env.ANYPOINT_USERNAME}</username>
+      <password>${env.ANYPOINT_PASSWORD}</password>
+    </server>
+  </servers>
 </settings>

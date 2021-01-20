@@ -23,17 +23,5 @@ jobs:
       with:
         java-version: 1.8
 
-    - name: Build artifact
-      run: cd main && mvn clean package --no-transfer-progress
-
-    - name: Deploy artifact
-      run: cd main && mvn deploy:deploy-file@github-deploy --no-transfer-progress -s .github/workflows/settings.xml
-      env:
-        GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GIT_USERNAME: mikeacjones
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: mule-artifact
-        path: main/target/*.jar
+    - name: Build artifact and deploy
+      run: cd main && mvn clean deploy
