@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>${env.ORG_ID}</groupId>
+  <groupId>af871948-2dd2-4f4c-8bbd-f6a997cd48d7</groupId>
   <artifactId>reddit-connector</artifactId>
   <packaging>mule-extension</packaging>
   <version>1.0.0</version>
@@ -40,13 +40,13 @@
     <snapshotRepository>
       <id>exchange-repository</id>
       <name>Exchange Repository</name>
-      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${env.ORG_ID}/maven</url>
+      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/af871948-2dd2-4f4c-8bbd-f6a997cd48d7/maven</url>
       <layout>default</layout>
     </snapshotRepository>
     <repository>
       <id>exchange-repository</id>
       <name>Exchange Repository</name>
-      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${env.ORG_ID}/maven</url>
+      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/af871948-2dd2-4f4c-8bbd-f6a997cd48d7/maven</url>
       <layout>default</layout>
     </repository>
   </distributionManagement>
