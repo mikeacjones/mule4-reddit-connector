@@ -26,3 +26,5 @@ jobs:
         ORG_ID: ${{ secrets.ORG_ID }}
         ANYPOINT_USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
         ANYPOINT_PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
+        NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
+        NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
